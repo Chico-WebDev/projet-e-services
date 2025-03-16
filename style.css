@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.43);
+/*    background-color: rgba(4, 40, 40, 0.312);*/
+/*    background-color: rgba(4, 73, 50, 0.404);*/
+   /* background-color: rgba(245, 245, 220, 0.326);*/
+/*   background-color: rgba(0, 0, 0, 0.495);*/
+    color: white;
+    transition: 1s;
+}
+
+#btn-dark-mode {
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 20%;
+    padding: 3px;
+}
+
+#backToTopBtn {
+    all: unset;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 70px;
+    align-items: center;
+
+}
+
+.logoApp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ span {
+    color: blueviolet;
+}
+
+.list {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.list li {
+    list-style: none;
+    padding: 10px;
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+/*
+.list li:first-child {
+    all: unset;
+    color: rgb(62, 14, 107);
+    border-bottom: 3px solid rgb(62, 14, 107);
+    padding-bottom: 5px;
+    transition: 0.6s;
+}
+
+.list li:first-child:hover {
+    all: unset;
+}*/
+
+.list li a:hover {
+    color: rgb(62, 14, 107);
+    border-bottom: 3px solid rgb(62, 14, 107);
+    padding-bottom: 5px;
+    transition: 0.6s;
+}
+
+.nav-bar .toogle #hamburger {
+    display: none;
+    gap: 20px
+}
+
+.nav-bar .toogle #lis {
+    display: none;
+    list-style: none;
+}
+
+.nav-bar .toogle #hamburger {
+    width: 30px;
+}
+
+.nav-bar .list #delete {
+    display: none;
+    width: 25px;
+}
+
+
+#Acceuil {
+    display: block;
+    padding: 50px 100px;
+   text-align: center;
+    width: 100%;
+    background: url(images/IA\ générative.png) repeat-x;
+}
+
+
+#Acceuil .text {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+#Acceuil .text h1 {
+    padding-bottom: 10px;
+}
+
+#Acceuil .text p {
+    
+    padding: 20px 200px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/*#Acceuil .images-content {
+    width: 1100px;
+    position: relative;
+}*/
+
+.service {
+    padding: 15px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px white;
+}
+
+.service:hover {
+    background-color: rgba(28, 7, 47, 0.5);
+}
+
+.service a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+#services-content {
+    padding: 30px 20px;
+}
+
+#services {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#services .box {
+    justify-items: center;
+    padding: 10px;
+    width: 100%;
+  
+}
+
+#services .box h2 {
+    padding: 30px 0;
+}
+
+#services .box p {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 1.0.5rem;
+}
+
+#services .box .card {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px blueviolet;
+    justify-items: center;
+    filter: blur(4px);
+    transition: filter, transform 0.3s ease-in-out;
+}
+
+#services .box .card img {
+    border-radius: 10px;
+}
+
+
+#services .box .card:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+}
+
+#services .box a {
+    text-decoration: none;
+    color: white;
+}
+
+#comment {
+    align-items: center;
+display: flex;
+justify-content: space-between;
+padding: 50px 20px;
+}
+
+#comment .images-content {
+    width: 400px;
+}
+
+#comment .comment-text {
+    display: block;
+    flex-direction: column;
+}
+
+.comment-text h2 {
+    padding-bottom: 20px;
+}
+
+.comment-text .box-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px white;
+    padding: 20px;
+    gap: 30px;
+}
+
+.box-comment #text-comment {
+    border: none;
+    padding: 5px;
+    width: 300px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    place-content: center;
+}
+
+.box-comment #envoyer {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px white;
+    background-color: black;
+    color: white;
+}
+
+#contact-contenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#contact-contenu .contact-box {
+    display: block;
+
+}
+
+.contact-box h2, p  {
+    padding: 10px 0;
+}
+
+.contact-box a {
+    color: rgb(62, 14, 107);
+    text-decoration: none;
+}
+
+#footer {
+    display: block;
+    padding: 20px 0;
+}
+
+#footer #right {
+    display: flex;
+    justify-content: center;
+}
+
+#footer #right a {
+    text-decoration: none;
+    color: rgb(62, 14, 107);
+}
+
+
+@media (max-width: 1125px) {
+    #Acceuil {
+        width: 95%;
+        margin: auto;
+        background: url(images/IA\ générative.png) no-repeat center;
+        padding: 70px 10px;
+    }
+    
+    #Acceuil .text p {
+        
+        padding: 20px 80px;
+       
+    }
+
+    #services .box .card {
+        width: 250px;
+    }
+
+    
+    .list {
+        gap: 20px;
+    }
+
+    .list li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1035px) {
+    #Acceuil .text p {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 970px) {
+    .list {
+        gap: 10px;
+    }
+
+    .list li {
+        padding: 10px;
+    }
+
+    #Acceuil .text .p {
+        padding: 20px 30px;
+    }
+
+    #comment .images-content {
+        width: 300px;
+    }
+}
+
+@media (max-width: 870px) {
+    #Acceuil .text p {
+        padding: 20px;
+    }
+
+    .list {
+        gap: 9px;
+    }
+
+    .list li {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 860px) {
+    #Acceuil .text {
+        padding: 10px;
+    }
+    #Acceuil .text p {
+        padding: 20px 10px;
+    }
+
+    #services .box .card {
+        width: 200px;
+    }
+
+    
+
+    .nav-bar .list {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+        background-color: rgba(137, 43, 226, 0.211);
+        box-shadow: 0px 0px 2px blueviolet;
+        
+    }
+
+    .nav-bar .toogle {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-bar .toogle #hamburger {
+        display: block;
+        gap: 20px
+    }
+    
+    .nav-bar .toogle #lis {
+        display: block;
+    }
+
+
+    .nav-bar .toogle  li {
+        list-style: none;
+    }
+
+    .nav-bar .toogle a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .nav-bar .toogle a:hover {
+        color: rgb(62, 14, 107);
+        border-bottom: 3px solid rgb(62, 14, 107);
+        padding-bottom: 5px;
+        transition: 0.6s;
+    }
+}
+
+@media (max-width: 758px) {
+    .list li {
+        padding: 10px;
+    }    
+
+    .list li a {
+        font-size: 1.2rem;
+    }
+
+    #Acceuil .text {
+        padding: 5px;
+    }
+    #Acceuil .text p {
+        padding: 20px 5px;
+    }
+
+    #services {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    
+    }
+
+    #services .box .card {
+        width: 300px;
+    }
+
+    #comment {
+        display: block;
+        justify-items: center;
+    }
+
+    #comment .images-content {
+        padding-top: 25px;
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 678px) {
+    #contact-contenu {
+       display: grid;
+       gap: 20px;
+       grid-template-columns: repeat(2, 1fr);
+       justify-items: center;
+    }
+}
+
+@media (max-width: 610px) {
+    .list li {
+        padding: 0;
+    }    
+
+    .list li a {
+        font-size: 0.83rem;
+    }
+
+    #Acceuil {
+        padding: 20px 10px;
+    }
+
+    #Acceuil .text {
+        padding: 5px 0;
+    }
+
+    #Acceuil .text h1 {
+        padding: 0;
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .comment-text .box-comment {
+        width: 350px;
+    }
+    #comment .box-comment #tex-comment {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    #comment .images-content {
+        width: 300px;
+    }
+
+}

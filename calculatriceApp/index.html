@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SCIENTIFIC CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+
+    
+    <button id="backToTopBtn">🔝</button>
+
+    <nav class="nav-bar" id="nav-bar">
+        <div class="logoApp" id="logoApp"><span>Calculatrice</span>App</div>
+
+        
+        <ul class="list" id="list">
+
+            <li><a  href="http://127.0.0.1:5501/learning%20Javascript/addEventListener/Projet%20e.Services/index.html">Acceuil</a></li>
+            <li><a  href="http://127.0.0.1:5501/learning%20Javascript/addEventListener/Projet%20e.Services/index.html#service">Services</a></li>
+            <li><a  href="#comment">Commentaire</a></li>
+            <li><a  href="#contact-contenu">Contacter</a></li>
+            <li><a  href="">Gift🎁</a></li>
+            <img id="delete" src="images/delete.png" width="100%" alt="">
+
+        </ul>
+
+            <div class="toogle">
+                <img id="hamburger" src="images/hamburger-menu.svg" width="100%" alt="">
+                
+                <div id="btn-dark-mode"><img src="images/dark-mode-svgrepo-com.svg" alt="" width="100%"></div>
+            </div>
+
+    </nav>
+
+
+
+    <section id="calculatrice">
+            <h1>
+                MY CALCULATOR JS
+            </h1>
+        </div>
+
+            <div class="calculator">
+
+                <input type="text" class="screen" name="" id="screen" disabled>
+                <br>
+
+                <div class="SCIENTIFIC">
+
+                <button style="background-color: gray;" onclick="clearScreen()">C</button>
+                <button style="background-color: gray;" onclick="appendToScreen('Math.sqrt')">√</button>
+                <button style="background-color: gray;" onclick="appendToScreen('**')">^</button>
+                <button style="background-color: gray;" onclick="appendToScreen('/')">/</button>
+              </div>
+              <br>
+
+              <div class="first-number">
+
+                    <button style="background-color: black;" onclick="appendToScreen('7')">7</button>
+                    <button style="background-color: black;" onclick="appendToScreen('8')">8</button>
+                    <button style="background-color: black;" onclick="appendToScreen('9')">9</button>
+                    <button style="background-color: orange;" onclick="appendToScreen('*')">*</button>
+            </div>
+
+                <br>
+
+                <div class="second-number">
+
+                    <button style="background-color: black;" onclick="appendToScreen('4')">4</button>
+                    <button style="background-color: black;" onclick="appendToScreen('5')">5</button>
+                    <button style="background-color: black;" onclick="appendToScreen('6')">6</button>
+                    <button style="background-color: orange;" onclick="appendToScreen('-')">-</button>
+            </div>
+                <br>
+
+                <div class="before-last-number">
+
+                    <button style="background-color: black;" onclick="appendToScreen('1')">1</button>
+                    <button style="background-color: black;" onclick="appendToScreen('2')">2</button>
+                    <button style="background-color: black;" onclick="appendToScreen('3')">3</button>
+                    <button style="background-color: orange;" onclick="appendToScreen('+')">+</button>
+            </div>
+                <br>
+                <div class="last-number">
+
+                    <button style="background-color: gray;" onclick="appendToScreen('Math.sin')">sin</button>
+                    <button style="background-color: gray;" onclick="appendToScreen('Math.cos')">cos</button>
+                    <button style="background-color: gray;"onclick="appendToScreen('Math.tan')">tan</button>
+                    <button style="background-color: orange;" onclick="calculateResult()">=</button>
+            </div>
+            </div>
+
+        </section>
+
+        
+    <section id="comment">
+
+        <div class="comment-text">
+
+            <h2>Commentaire Utilisateurs</h2>
+
+            <div class="box-comment">
+
+                <textarea id="text-comment" placeholder="Entrer un commentaire"></textarea>
+
+                <button id="envoyer" type="submit">></button>
+
+            </div>
+
+        </div>
+
+        <div class="images-content">
+            <img src="images/Leonardo_Phoenix_A_futuristic_and_sleek_digital_illustration_d_1.jpg" width="100%" alt="">
+        </div>
+
+    </section>
+
+    <section id="contact-contenu">
+
+
+            <div class="contact-box">
+                <h2>Téléphone</h2>
+                <p>+225 ##########.</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Email</h2>
+                <p>Chico-WebDev@gmail.com</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Réseau sociaux</h2>
+                <p><a href="">Facebook</a></p>
+                <p><a href="">Instagram</a></p>
+                <p><a href="">TikTok</a></p>
+                <p><a href="">Linkldin</a></p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Compagnies</h2>
+                <p>MDN DOCS</p>
+                <p>CHATGPT</p>
+                <p>GEMINI</p>
+                <p>GEEKSForGeeks</p>
+            </div>
+
+    </section>
+
+    <section id="footer">
+
+        <div id="right">
+            <p>&copy; Tous droits réservés. by <span>Chico-WebDev</span></p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
