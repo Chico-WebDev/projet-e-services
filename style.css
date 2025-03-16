@@ -175,14 +175,15 @@ html {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
 #services .box {
     justify-items: center;
     padding: 10px;
     width: 100%;
-    place-content: center;
-  
+    max-width: 90%;
+    align-items: center;
 }
 
 #services .box h2 {
@@ -221,10 +222,7 @@ html {
 
 #services .box .btn {
     padding: 15px;
-    place-content: center;
-    justify-content: center;
-    justify-items: center;
-    place-items: center;
+    margin: 0 auto;
     background-color: blueviolet;
     color: white;
     border: none;
@@ -237,11 +235,13 @@ html {
 display: flex;
 justify-content: space-between;
 padding: 50px 20px;
+margin: 0 auto;
 }
 
 #comment .images-content {
     justify-items: center;
     width: 400px;
+    margin: 0 auto;
 }
 
 #comment .comment-text {
@@ -472,11 +472,13 @@ padding: 50px 20px;
     #comment {
         display: block;
         justify-items: center;
+        margin: 0 auto;
     }
 
     #comment .images-content {
         padding-top: 25px;
         width: 400px;
+        margin: 0 auto;
     }
 
 }
