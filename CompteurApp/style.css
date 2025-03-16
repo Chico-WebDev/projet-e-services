@@ -12,7 +12,7 @@ html {
     position: fixed;
  
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     background-color: #3498db;
     color: white;
     padding: 10px;
@@ -513,6 +513,11 @@ html {
         .boxContent .compteur #counter {
             width: 200px;
             padding: 15px;
+        }
+
+        #backToTopBtn {
+            right: 5px;
+            font-size: 15px;
         }
 
     }

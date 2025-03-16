@@ -12,7 +12,7 @@ html {
     all: unset;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     background-color: #3498db;
     color: white;
     padding: 10px;
@@ -462,6 +462,11 @@ button {
     
         .calculator {
             width: 290px;
+        }
+
+        #backToTopBtn {
+            right: 5px;
+            font-size: 15px;
         }
     }
         
