@@ -181,6 +181,7 @@ html {
     justify-items: center;
     padding: 10px;
     width: 100%;
+    place-content: center;
   
 }
 
@@ -218,8 +219,12 @@ html {
     color: white;
 }
 
-#services .box .service {
-    padding: 15px 10px;
+#services .box .btn {
+    padding: 15px;
+    place-content: center;
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
     background-color: blueviolet;
     color: white;
     border: none;
